@@ -5,5 +5,7 @@ defineOptions({
 </script>
 
 <template>
-  <h1>program-knowledge-admin</h1>
+  <div class="border border-red-500">
+    <h1 class="text-center">欢迎使用面试题库系统</h1>
+  </div>
 </template>
