@@ -2,7 +2,7 @@
 export default {
   path: "/fighting",
   meta: {
-    title: "前端"
+    title: "测试接口组件"
   },
   children: [
     {
@@ -10,9 +10,19 @@ export default {
       name: "Test",
       component: () => import("@/views/test/index.vue"),
       meta: {
-        title: "测试接口"
+        title: "测试接口",
         // 通过设置showParent为true，显示父级
-        // showParent: true
+        showParent: true
+      }
+    },
+    {
+      path: "/test/md",
+      name: "Md",
+      component: () => import("@/views/test/md.vue"),
+      meta: {
+        title: "Markdown编辑器",
+        // 通过设置showParent为true，显示父级
+        showParent: true
       }
     }
   ]
